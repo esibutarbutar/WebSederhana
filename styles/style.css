@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+.judul {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #618264;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav {
+    background-color: #79AC78;
+    margin-top: 10px;
+    padding: 1px;
+    top: 0;
+    display: flex;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav .icon {
+    margin-right: 20px;
+    color: white;
+    /* Atur jarak kanan dari ikon menu */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.featured-images {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.profile img {
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.profile header {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(172, 222, 169, 0.635);
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(172, 222, 169, 0.635);
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #D0E7D2;
+}
+
+
+aside {
+    flex: 1;
+}
+
+footer {
+    padding: 1px;
+    color: white;
+    background-color: #79AC78;
+    text-align: center;
+}
+
+.setting {
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        order: -1;
+    }
+
+}
+
+h2,
+h4 {
+    color: #618264;
+}
+
+.judul h4 {
+    color: white;
+}
